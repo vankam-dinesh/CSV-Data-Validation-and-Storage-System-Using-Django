@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSV Data Validation and Storage System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .title-container {
+            background-image: linear-gradient(to right, #741515, #17277b);
+            color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .title-container h1 {
+            font-size: 32px;
+            text-align: center;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="title-container">
+            <h1 class="text-center">CSV Data Validation and Storage System</h1>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'upload_csv' %}">Upload CSV</a></li>
+            <li><a href="{% url 'list_users' %}">User List</a></li>
+        </ul>
+    </nav>
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
