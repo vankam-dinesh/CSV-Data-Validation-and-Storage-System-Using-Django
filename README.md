@@ -8,7 +8,7 @@ The CSV Data Validation and Storage System is a web application developed using 
 - [Introduction](#introduction)                                                                                                                                                                      
 - [Installation](#installation)                                        
 - [Usage](#usage)                                                                           
-  - [Upload CSV File](#upload-csv-file)                                        
+  - [Upload CSV File](#upload-csv-file)                                                                                                       
   - [Summary Report](#summary-report)                                                                
   - [Duplicate Rows](#duplicate-rows)
   - [Invalid Rows](#invalid-rows)
